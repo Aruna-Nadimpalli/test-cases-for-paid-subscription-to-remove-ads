@@ -1,0 +1,84 @@
+
+ Test Cases for Paid Subscription to Remove Ads
+Test case design techniques; Boundary value analysis,case testing and Error guessing techniques used .
+CASE TESTING:
+1. Test Case 
+   Description: Verify that ads are removed from the user interface after purchasing a paid subscription.  
+  Precondition: User has an active free account with ads displayed.  
+   Test Steps:
+   Input: Upgrade to a paid subscription.
+   2. Reload or navigate within the application.
+   Expected Result: Ads are no longer displayed on any part of the user interface after upgrading to the paid subscription.
+
+2. Test Case  
+  Description: Verify that ads reappear if the paid subscription expires.  
+  Precondition: User has an active paid subscription with no ads displayed.  
+  Test Steps:
+   Input: Allow the subscription to expire or cancel the subscription.
+   2. Reload or navigate within the application.
+   Expected Result: Ads reappear in the user interface after the subscription is no longer active.
+
+3. Test Case  
+   Description: Verify that users see an option to upgrade to a paid subscription to remove ads.  
+   Precondition: User is on a free account with ads displayed.  
+   Test Steps:
+   Input: Navigate to the account settings or subscription page.
+   2. Check for an upgrade option.
+   Expected Result: An option is available for users to upgrade to a paid subscription to remove ads.
+BOUNDARY VALUE ANALYSIS:
+4. Test Case  
+  Description: Verify that a notification confirms the removal of ads immediately after purchasing a subscription.  
+  Precondition: User is on a free account and successfully completes the upgrade to a paid subscription.  
+   Test Steps:
+  Input: Complete the payment for a paid subscription.
+   2. Observe any confirmation messages.
+   Expected Result: A confirmation notification informs the user that ads will no longer appear.
+
+5. Test Case  
+  Description: Verify that the ad removal applies consistently across multiple devices for the same account.  
+   Precondition: User has a paid subscription active on their account.  
+   Test Steps:
+  Input: Log in to the account on Device A and check for ads.
+   2. Log in to the account on Device B and check for ads.
+   Expected Result: Ads are removed on both devices when logged in to the account with the active paid subscription.
+
+6. Test Case 
+   Description: Verify that a refund or payment reversal reactivates ads for the user.  
+  Precondition: User has purchased a paid subscription and received confirmation of ad removal.  
+   Test Steps:
+  Input: Issue a refund or reversal for the subscription payment.
+   2. Reload the application or account.
+   Expected Result: Ads reappear on the user interface after the refund is processed.
+
+7. Test Case  
+   Description: Verify that the system logs ad removal upon subscription purchase.  
+   Precondition: Subscription logging is enabled.  
+  Test Steps:
+   Input: Complete a paid subscription purchase.
+   Expected Result: The system logs the ad removal for the user account as part of the subscription activation.
+
+8. Test Case 
+   Description: Verify that ad-free status is retained after logging out and logging back in.  
+   Precondition: User has a paid subscription that removes ads.  
+   Test Steps:
+  Input: Log out of the account with an active paid subscription.
+   2. Log back in and check for ads.
+   Expected Result: No ads are displayed upon re-login if the subscription is still active.
+
+9. Test Case   
+  Description: Verify that ad-free access persists when offline if logged in with an active subscription.  
+   Precondition: User has an active subscription and logs in before going offline.  
+  Test Steps:
+  Input: Activate the subscription and log in while online.
+   2. Go offline and navigate within the app.
+   Expected Result: No ads are displayed in offline mode with an active subscription.
+
+10.Test Case 
+    Description: Verify that users receive a notification for renewal to maintain ad-free access when the subscription is about to expire.  
+    Precondition: User has a paid subscription close to expiration.  
+    Test Steps:
+    Input: Allow the subscription to near its expiration date.
+    2. Check for renewal notifications.
+   Expected Result: The user receives a renewal notification to maintain ad-free access.
+
+These test cases cover scenarios to ensure the ad-free experience is maintained for paid subscribers and removed if the subscription lapses.
